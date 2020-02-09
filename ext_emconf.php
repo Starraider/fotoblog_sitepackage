@@ -11,7 +11,7 @@ $EM_CONF[$_EXTKEY] = [
         'depends' => [
             'typo3' => '8.7.0-9.5.99',
             'rte_ckeditor' => '8.7.0-9.5.99',
-            'bootstrap_package' => '10.0.0-10.0.99'
+            'bootstrap_package' => '10.0.0-11.0.99'
         ],
         'conflicts' => [
         ],
@@ -28,5 +28,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Sven Kalbhenn',
     'author_email' => 'sven@skom.de',
     'author_company' => 'SKom',
-    'version' => '1.0.0',
+    'version' => '1.0.5',
 ];
