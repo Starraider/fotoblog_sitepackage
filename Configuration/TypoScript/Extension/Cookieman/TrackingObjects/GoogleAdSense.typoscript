@@ -1,0 +1,18 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    GoogleAdsense {
+        show {
+            DSID {
+                duration = 1
+                durationUnit = months
+                type = cookie_http
+                provider = Google
+            }
+            IDE {
+                duration = 1
+                durationUnit = day
+                type = cookie_http
+                provider = Google
+            }
+        }
+    }
+}

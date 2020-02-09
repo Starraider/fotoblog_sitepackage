@@ -1,0 +1,33 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:bk2k="http://typo3.org/ns/BK2K/BootstrapPackage/ViewHelpers" data-namespace-typo3-fluid="true">
+
+
+
+<f:if condition="{languagenavigation}">
+        <f:for each="{languagenavigation}" as="item">
+            <f:if condition="{item.active}">
+                <f:then>
+
+                </f:then>
+                <f:else>
+                    <f:if condition="{item.available}">
+                        <f:then>
+                            <li class="nav-item">
+                                <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                                    <span class="nav-link-text">{item.navigationTitle}</span>
+                                </a>
+                            </li>
+                        </f:then>
+                        <f:else>
+                            <li class="nav-item text-muted">
+                                <a href="{item.link}" hreflang="{item.hreflang}" title="{item.title}">
+                                    <span class="nav-link-text">{item.navigationTitle}</span>
+                                </a>
+                            </li>
+                        </f:else>
+                    </f:if>
+                </f:else>
+            </f:if>
+        </f:for>
+</f:if>
+
+</html>

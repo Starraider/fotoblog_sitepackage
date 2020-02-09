@@ -1,0 +1,10 @@
+{namespace blog=T3G\AgencyPack\Blog\ViewHelpers}
+
+
+<span class="entry-date">
+    <i class="fa fa-calendar-alt"></i>&nbsp;
+    <blog:link.post post="{post}" rel="bookmark">
+        <time class="entry-date published" datetime="{f:format.date(format: '%Y-%m-%dT%H:%M:%S-%z', date: post.publishDate)}" itemprop="datepublished">{f:format.date(format: '{settings.lists.posts.dateFormat}', date: post.publishDate)}</time>
+    </blog:link.post>
+</span>
+

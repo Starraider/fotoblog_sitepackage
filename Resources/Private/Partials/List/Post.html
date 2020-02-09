@@ -1,0 +1,32 @@
+{namespace blog=T3G\AgencyPack\Blog\ViewHelpers}
+<div class="card post">
+
+    <f:if condition="{post.media -> f:count()}">
+        <f:for each="{post.media}" as="media" iteration="i">
+            <blog:link.post post="{post}">
+                <f:image src="{media.uid}" maxWidth="520" treatIdAsReference="1" class="img-fluid card-img-top" alt="{post.title}" title="{post.title}" />
+            </blog:link.post>
+        </f:for>
+    </f:if>
+
+    <div class="card-body">
+        <h2 class="card-title" itemprop="name">
+            <blog:link.post post="{post}"/>
+        </h2>
+        <p class="list-meta small">
+            <f:render partial="Post/MetaDate" arguments="{_all}"/> | <f:render partial="Post/MetaComments" arguments="{_all}"/> |<f:render partial="Post/MetaCategory" arguments="{_all}"/>
+        </p>
+        <f:if condition="{post.abstract}">
+            <f:then>
+                <p class="card-text" itemprop="description">{post.abstract}</p>
+            </f:then>
+            <f:else>
+                <p class="card-text" itemprop="description">{post.description}</p>
+            </f:else>
+            <blog:link.post post="{post}">
+                mehr...
+            </blog:link.post>
+        </f:if>
+    </div>
+</div>
+

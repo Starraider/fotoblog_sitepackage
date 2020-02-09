@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2018-11-12UTC16:52:100">
+        <header>
+            <authorName>Sven Kalbhenn</authorName>
+            <authorEmail>sven@skom.de</authorEmail>
+        </header>
+        <body>
+            <trans-unit id="alternativeLanguage">
+                <source>Sprache</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

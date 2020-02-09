@@ -1,0 +1,45 @@
+# include definition of TrackingObjects
+@import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/*.typoscript'
+@import 'EXT:fotoblog_sitepackage/Configuration/TypoScript/Extension/Cookieman/TrackingObjects/*.typoscript'
+#<INCLUDE_TYPOSCRIPT: source="DIR:EXT:fotoblog_sitepackage/Configuration/TypoScript/Extension/Cookieman/TrackingObjects/" extensions="typoscript">
+
+plugin.tx_cookieman {
+    settings {
+        groups {
+            mandatory {
+                trackingObjects {
+
+                }
+            }
+            statistics {
+                trackingObjects {
+                    10 = GoogleAnalytics
+                }
+                respectDnt = 1
+                showDntMessage = 1
+            }
+            marketing {
+                trackingObjects {
+                    10 = GoogleAdsense
+                }
+                respectDnt = 1
+                showDntMessage = 1
+            }
+        }
+    }
+    _LOCAL_LANG {
+        default {
+            group.statistics = Statistics
+            group.statistics.desc = With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.
+            group.marketing = Marketing
+            group.marketing.desc = These cookies enable us to display personalised advertising on our website, which helps us to finance this website.
+        }
+
+        de {
+            group.statistics = Statistiken
+            group.statistics.desc = Mit Hilfe dieser Cookies sind wir bemüht unser Angebot für Sie noch attraktiver zu gestalten. Mittels pseudonymisierter Daten von Websitenutzern kann der Nutzerfluss analysiert und beurteilt werden. Dies gibt uns die Möglichkeit Werbe- und Websiteinhalte zu optimieren.
+            group.marketing = Marketing
+            group.marketing.desc = Diese Cookies ermöglichen es uns personalisierte Werbung auf unserer Website anzuzeigen, die uns hilft, diese Website zu finanzieren.
+        }
+    }
+}

@@ -1,0 +1,17 @@
+//
+// Backend Layouts
+//
+
+//
+// 2 Columns
+//
+@include media-breakpoint-up('lg') {
+    .backendlayout-blogpost {
+        .maincontent-wrap {
+            width: calc(100% / 12 * 9);
+        }
+        .subcontent-wrap {
+            width: calc(100% / 12 * 3);
+        }
+    }
+}

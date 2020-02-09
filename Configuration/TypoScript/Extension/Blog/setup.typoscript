@@ -1,0 +1,33 @@
+plugin.tx_blog {
+    view {
+        templateRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Templates/
+        partialRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Partials/
+        layoutRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Layouts/
+        widget.TYPO3\CMS\Fluid\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates
+
+    }
+    settings {
+        comments {
+            moderation = 1
+        }
+        sidebarWidgets {
+#            10 = tt_content.list.20.blog_recentpostswidget
+#            20 = tt_content.list.20.blog_categorywidget
+#            30 = tt_content.list.20.blog_tagwidget
+#            40 = tt_content.list.20.blog_commentswidget
+            50 >
+            60 >
+        }
+        pageInfo.title = TEXT
+        pageInfo.title {
+            data = page:page:title // page:subtitle // nav_title
+            stdWrap.wrap = <h1>|</h1>
+        }
+    }
+}
+plugin.tx_blog.settings.lists.posts.maximumDisplayedItems = 0
+[page["uid"] == 2]
+    plugin.tx_blog.settings.paginateItemsPerPage = 9
+[ELSE]
+    plugin.tx_blog.settings.paginateItemsPerPage = 18
+[END]

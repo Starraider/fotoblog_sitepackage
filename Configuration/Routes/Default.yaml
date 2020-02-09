@@ -1,0 +1,7 @@
+imports:
+  - { resource: "EXT:fotoblog_sitepackage/Configuration/Routes/BlogCategory.yaml" }
+  - { resource: "EXT:fotoblog_sitepackage/Configuration/Routes/BlogTag.yaml" }
+  - { resource: "EXT:blog/Configuration/Routes/BlogArchive.yaml" }
+  - { resource: "EXT:blog/Configuration/Routes/BlogAuthorPosts.yaml" }
+  - { resource: "EXT:blog/Configuration/Routes/BlogFeedWidget.yaml" }
+  - { resource: "EXT:blog/Configuration/Routes/BlogPosts.yaml" }

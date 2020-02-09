@@ -1,0 +1,9 @@
+{namespace blog=T3G\AgencyPack\Blog\ViewHelpers}
+
+<f:if condition="{post.categories}">
+    <f:for each="{post.categories}" as="postCategory">
+        <i class="fa fa-tag"></i>&nbsp;
+        <blog:link.category category="{postCategory}" class="label label-default label-category" />
+    </f:for>
+</f:if>
+

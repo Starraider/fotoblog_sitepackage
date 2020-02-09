@@ -1,0 +1,69 @@
+
+
+//
+// Variables
+//
+@import "variables";
+
+//
+// Import needed Bootstrap Package Files
+//
+@import "../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme";
+
+//
+// Components
+//
+@import "backendlayouts";
+
+.extbase-debugger-floating {
+    margin-top: 100px;
+}
+
+//
+// Blog
+//
+.blog-post {
+    .entry-meta {
+        margin-top: 3.5rem;
+        margin-bottom: 1.5rem;
+    }
+    .frame {
+        padding-top: 0;
+    }
+}
+.tx-blog-widget {
+    margin-bottom: 2rem;
+}
+.list-meta {
+    margin-bottom: 0.5rem;
+}
+
+.card-deck .card {
+    margin-bottom: $card-deck-margin*2;
+}
+
+//
+// Cookie-Banner
+//
+.tx-wacon-cookie-management {
+    .cookie-set {
+        color: $link-color;
+        &:hover {
+            color: $link-hover-color;
+        }
+    }
+}
+
+//
+// Footer
+//
+#page-footer {
+    .section-row {
+        .frame {
+            .frame {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+}

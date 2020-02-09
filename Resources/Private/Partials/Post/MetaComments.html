@@ -1,0 +1,21 @@
+{namespace blog=T3G\AgencyPack\Blog\ViewHelpers}
+
+<f:if condition="{settings.comments.disqus._typoScriptNodeValue} !== '1'">
+    <f:then>
+        <f:alias map="{commentCount: '{f:count(subject: \'{post.activeComments}\')}'}">
+            <i class="fa fa-comment"></i>&nbsp;
+            <meta itemprop="commentCount" content="{commentCount}"/>
+            <span class="comments-link">
+                <blog:link.post post="{post}" section="comments">
+                    {commentCount}
+                </blog:link.post>
+            </span>
+        </f:alias>
+    </f:then>
+    <f:else>
+        <blog:link.post post="{post}" section="disqus_thread" data="{disqus-identifier: '{settings.comments.disqus.shortname}:post:{post.uid}'}">
+            <f:translate key="message.comments" arguments="{0: 0}"/>
+        </blog:link.post>
+    </f:else>
+</f:if>
+

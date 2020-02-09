@@ -1,0 +1,49 @@
+{namespace blog=T3G\AgencyPack\Blog\ViewHelpers}
+
+<div class="entry-meta">
+    <span class="entry-date">
+        <i class="fa fa-calendar-alt"></i>&nbsp;
+        <blog:link.post post="{post}" rel="bookmark">
+            <time class="entry-date published" datetime="{f:format.date(format: '%Y-%m-%dT%H:%M:%S-%z', date: post.publishDate)}" itemprop="datepublished">{f:format.date(format: '{settings.lists.posts.dateFormat}', date: post.publishDate)}</time>
+        </blog:link.post>
+    </span>
+    <f:if condition="{settings.comments.disqus._typoScriptNodeValue} !== '1'">
+        <f:then>
+            <f:alias map="{commentCount: '{f:count(subject: \'{post.activeComments}\')}'}">
+                <span class="sep"> | </span>
+                <i class="fa fa-comments"></i>&nbsp;
+                <meta itemprop="commentCount" content="{commentCount}"/>
+                <span class="comments-link">
+                    <blog:link.post post="{post}" section="comments">
+                        <f:if condition="{commentCount} == 1">
+                            <f:then><f:translate key="message.comment" arguments="{0: commentCount}"/></f:then>
+                            <f:else><f:translate key="message.comments" arguments="{0: commentCount}"/></f:else>
+                        </f:if>
+                    </blog:link.post>
+                </span>
+            </f:alias>
+        </f:then>
+        <f:else>
+            <blog:link.post post="{post}" section="disqus_thread" data="{disqus-identifier: '{settings.comments.disqus.shortname}:post:{post.uid}'}">
+                <f:translate key="message.comments" arguments="{0: 0}"/>
+            </blog:link.post>
+        </f:else>
+    </f:if>
+    <f:if condition="{post.categories}">
+        <span class="sep"> | </span>
+        <f:for each="{post.categories}" as="postCategory">
+            <blog:link.category category="{postCategory}" class="label label-default label-category" />
+        </f:for>
+    </f:if>
+    <f:if condition="{post.tags}">
+        <span class="sep"> | </span>
+        <span itemprop="keywords">
+            <i class="fa fa-tags"></i>&nbsp;Tags:&nbsp;
+            <f:for each="{post.tags}" as="postTag">
+                <blog:link.tag tag="{postTag}" class="badge badge-secondary badge-tag">
+                    <span><i class="fa fa-tag"></i> {postTag.title}</span>
+                </blog:link.tag>&nbsp;
+            </f:for>
+        </span>
+    </f:if>
+</div>

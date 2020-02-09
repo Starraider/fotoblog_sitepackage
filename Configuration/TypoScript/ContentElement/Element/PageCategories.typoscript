@@ -1,0 +1,24 @@
+#########################
+#### Page Categories ####
+#########################
+lib.page_categories = COA
+lib.page_categories {
+    20 = FLUIDTEMPLATE
+    20 {
+        file = EXT:fotoblog_sitepackage/Resources/Private/Partials/ContentElements/PageCategories.html
+
+        dataProcessing.10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+        dataProcessing.10 {
+            if.isTrue.field = categories
+            table = sys_category
+            selectFields = sys_category.*
+            pidInList = 0
+            recursive = 999
+            join = sys_category_record_mm ON sys_category.uid = sys_category_record_mm.uid_local
+            where.data = 100
+            where.wrap = sys_category_record_mm.tablenames = 'pages' and sys_category_record_mm.uid_foreign='|'
+            orderBy = sys_category.sorting
+            as = pagecategories
+        }
+    }
+}
