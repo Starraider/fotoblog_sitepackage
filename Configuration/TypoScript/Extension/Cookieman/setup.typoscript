@@ -8,22 +8,17 @@ plugin.tx_cookieman {
         groups {
             mandatory {
                 trackingObjects {
-
+                    10 = GoogleTagManager
+                    20 = GoogleAnalyticsTrackingOff
                 }
-            }
-            statistics {
-                trackingObjects {
-                    10 = GoogleAnalytics
-                }
-                respectDnt = 1
-                showDntMessage = 1
             }
             marketing {
                 trackingObjects {
-                    10 = GoogleAdsense
+                    10 = GoogleAnalyticsTrackingOn
+                    20 = GoogleAdsense
                 }
-                respectDnt = 1
-                showDntMessage = 1
+                respectDnt = 0
+                showDntMessage = 0
             }
         }
     }
