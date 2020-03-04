@@ -2,6 +2,7 @@
 #### DEPENDENCIES ####
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:skom_sitepackage/Configuration/TypoScript/setup.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/ContentElement/setup.typoscript">
 
 #############################################################
@@ -11,38 +12,6 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/Extension/Cookieman/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('cookieman')">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/Extension/RxShariff/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('rx_shariff')">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/Extension/Blog/setup.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('blog')">
-
-#############
-### Debug ###
-#############
-#plugin.tx_min.tinysource.enable = 1
-config {
-    debug = 0
-    no_cache = 0
-    admPanel = 0
-    contentObjectExceptionHandler = 1
-    compressCss = 1
-    concatenateCss = 1
-    compressJs = 1
-    concatenateJs = 1
-    sendCacheHeaders = 1
-    cache_period = 7776000
-}
-[applicationContext = Development]
-    #plugin.tx_min.tinysource.enable = 0
-    config {
-        debug = 1
-        no_cache = 1
-        admPanel = 0
-        contentObjectExceptionHandler = 0
-        compressCss = 0
-        concatenateCss = 0
-        compressJs = 0
-        concatenateJs = 0
-        sendCacheHeaders = 0
-        cache_period = 0
-    }
-[global]
 
 ############################
 #### Google Tag Manager ####
@@ -59,6 +28,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 #### PAGE ####
 ##############
 page {
+    10 = FLUIDTEMPLATE
+    10 {
+        templateRootPaths {
+            0 = EXT:bootstrap_package/Resources/Private/Templates/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Templates/Page/
+            2 = EXT:fotoblog_sitepackage/Resources/Private/Templates/Page/
+            3 = {$page.fluidtemplate.templateRootPath}
+        }
+        partialRootPaths {
+            0 = EXT:bootstrap_package/Resources/Private/Partials/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Partials/Page/
+            2 = EXT:fotoblog_sitepackage/Resources/Private/Partials/Page/
+            3 = {$page.fluidtemplate.partialRootPath}
+        }
+        layoutRootPaths {
+            0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
+            1 = EXT:skom_sitepackage/Resources/Private/Layouts/Page/
+            2 = EXT:fotoblog_sitepackage/Resources/Private/Layouts/Page/
+            3 = {$page.fluidtemplate.layoutRootPath}
+        }
+    }
     includeCSS {
         theme = EXT:fotoblog_sitepackage/Resources/Public/Scss/Theme/theme.scss
     }
