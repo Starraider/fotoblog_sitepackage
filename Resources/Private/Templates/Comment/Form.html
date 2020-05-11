@@ -80,11 +80,11 @@
                                     <p><span class="tx-blog-comment-required"><f:translate key="label.required.field"/> <f:translate
                                         key="label.required.field.explanation"/></span></p>
 
-                                    <f:if condition="{settings.comments.google_recaptcha}">
-                                        <script src="https://www.google.com/recaptcha/api.js"></script>
-                                        <div class="g-recaptcha"
-                                             data-sitekey="{settings.comments.google_recaptcha.website_key}"></div>
-                                    </f:if>
+                                        <f:if condition="{settings.comments.google_recaptcha._typoScriptNodeValue}">
+                                            <script src="https://www.google.com/recaptcha/api.js"></script>
+                                            <div class="g-recaptcha"
+                                                 data-sitekey="{settings.comments.google_recaptcha.website_key}"></div>
+                                        </f:if>
 
                                     <f:form.submit name="submit" class="btn btn-primary"
                                                    value="{f:translate(key: 'form.comment.submit')}"/>
