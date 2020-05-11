@@ -1,13 +1,13 @@
 tt_content.list.20.rxshariff_shariff {
     settings {
-        enableBackend = 1
+        enableBackend = 0
         data {
             lang = auto
             orientation = horizontal
-            services = facebook,twitter,reddit,whatsapp,mail
+            services = facebook,twitter,linkedin,reddit,xing,stumbleupon,whatsapp
             theme = grey
             twitter-via = sven_kalbhenn
-            data-button-style = icon-count
+            data-button-style = icon
         }
     }
 }
