@@ -1,4 +1,5 @@
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://PayPal.me/SvenKalbhenn)
+![GitHub](https://img.shields.io/github/license/Starraider/fotoblog_sitepackage)
 [![CodeFactor](https://www.codefactor.io/repository/github/starraider/fotoblog_sitepackage/badge)](https://www.codefactor.io/repository/github/starraider/fotoblog_sitepackage)
 ![GitHub issues](https://img.shields.io/github/issues/Starraider/fotoblog_sitepackage)
 
