@@ -12,4 +12,4 @@ This is a sitepackage which preconfigures the blog extension and comes with some
 
 Developed 2020 by Sven Kalbhenn
 
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fsven_kalbhenn)
+![https://twitter.com/sven_kalbhenn](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fsven_kalbhenn)
