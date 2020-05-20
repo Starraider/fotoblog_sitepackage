@@ -12,7 +12,4 @@ This is a sitepackage which preconfigures the blog extension and comes with some
 
 Developed 2020 by Sven Kalbhenn
 
-If you have any questions about this project or just want to talk:
-Send me a message [sven@skom.de](mailto:sven@skom.de)
-
-![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FStarraider%2Ffotoblog_sitepackage)
+![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fsven_kalbhenn)
