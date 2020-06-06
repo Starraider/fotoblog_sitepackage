@@ -10,7 +10,7 @@
         "typo3/cms-core": "^9.5.17 || ^10.4.2",
         "typo3/cms-rte-ckeditor": "^9.5 || ^10.4",
         "bk2k/bootstrap-package": "^11.0",
-        "skom/skom-sitepackage": "^9.2-dev"
+        "skom/skom-sitepackage": "@dev"
     },
     "autoload": {
         "psr-4": {
