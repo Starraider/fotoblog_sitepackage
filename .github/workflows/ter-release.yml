@@ -1,4 +1,3 @@
-// ter-release.yml
 name: TYPO3 Extension TER Release
 on:
   push:
