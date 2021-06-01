@@ -9,8 +9,7 @@ $EM_CONF[$_EXTKEY] = [
     'category' => 'templates',
     'constraints' => [
         'depends' => [
-            'typo3' => '9.5.17-10.4.99',
-            'rte_ckeditor' => '9.5.17-10.4.99',
+            'typo3' => '9.5.25-10.4.99',
             'bootstrap_package' => '11.0.0-11.99.99',
             'skom_sitepackage' => '9.2.0-9.99.99'
         ],
@@ -29,5 +28,5 @@ $EM_CONF[$_EXTKEY] = [
     'author' => 'Sven Kalbhenn',
     'author_email' => 'sven@skom.de',
     'author_company' => 'SKom',
-    'version' => '1.1.0',
+    'version' => '1.2.0',
 ];
