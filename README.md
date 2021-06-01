@@ -17,10 +17,16 @@ It's build upon a stack of a few TYPO3 extensions:
 4. fotoblog_sitepackage adds configuration and templates for the blog extension
 5. [customer_sitepackage](https://github.com/Starraider/customer_sitepackage) in this sitepackage you should configure your individual TYPO3-Website, for example the colors, logos, fonts etc.
 
+## Examples
+
+Here you can find examples of websites, who use this extensions:
+
+- [Sven's Foto- & Travel-Blog](https://www.photographieren.info/)
+
 ## Dependency
 
 - [bk2k/bootstrap-package](https://extensions.typo3.org/extension/bootstrap_package): ^11
-- [t3g/blog](https://extensions.typo3.org/extension/blog)
+- [t3g/blog](https://extensions.typo3.org/extension/blog): ^9.1
 - [skom/skom-sitepackage](https://github.com/Starraider/skom_sitepackage): ^9.2.14
 
 ---
