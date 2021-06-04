@@ -11,3 +11,10 @@ tt_content.list.20.rxshariff_shariff {
         }
     }
 }
+page {
+    includeJSLibs {
+        tx_rxshariff_shariff >
+        tx_rxshariff_shariff = EXT:rx_shariff/Resources/Public/JavaScript/shariff.min.js
+        tx_rxshariff_shariff.defer = 1
+    }
+}

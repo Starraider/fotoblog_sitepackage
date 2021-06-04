@@ -1,0 +1,17 @@
+plugin {
+  tx_blog {
+    view {
+      templateRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Templates/
+      partialRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Partials/
+      layoutRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Layouts/
+      widget {
+        templateRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Templates/
+      }
+      emails {
+        templateRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Mails/Templates/
+        partialRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Mails/Partials/
+        layoutRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Mails/Layouts/
+      }
+    }
+  }
+}

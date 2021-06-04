@@ -1,12 +1,12 @@
 plugin.tx_blog {
     view {
-        templateRootPaths.0 = {$plugin.tx_blog.view.templateRootPaths}
-        partialRootPaths.0 = {$plugin.tx_blog.view.partialRootPaths}
-        layoutRootPaths.0 = {$plugin.tx_blog.view.layoutRootPaths}
-        templateRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Templates/
-        partialRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Partials/
-        layoutRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Layouts/
-        widget.TYPO3\CMS\Fluid\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates
+#        templateRootPaths.0 = {$plugin.tx_blog.view.templateRootPaths}
+#        partialRootPaths.0 = {$plugin.tx_blog.view.partialRootPaths}
+#        layoutRootPaths.0 = {$plugin.tx_blog.view.layoutRootPaths}
+#        templateRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Templates/
+#        partialRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Partials/
+#        layoutRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Layouts/
+#        widget.TYPO3\CMS\Fluid\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates
 
     }
     settings {

@@ -1,6 +1,6 @@
 /*!
- * Fotoblog Sitepackage v1.0.0 (https://www.photographieren.info)
- * Copyright 2017-2018 Sven Kalbhenn
+ * Fotoblog Sitepackage (https://www.photographieren.info)
+ * Copyright 2017-2021 Sven Kalbhenn
  * Licensed under the GPL-2.0-or-later license
  */
-console.log("WE LOVE TYPO3");
+console.log("WE LOVE fotoblog_sitepackage");

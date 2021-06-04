@@ -6,8 +6,8 @@
 //
 // Import needed Bootstrap Package Files
 //
-@import "../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme";
-@import "../../../../../skom_sitepackage/Resources/Public/Scss/Theme/theme";
+//@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/Theme/theme";
+//@import "../../../../../../public/typo3conf/ext/skom_sitepackage/Resources/Public/Scss/Theme/theme";
 
 //
 // Components
@@ -37,5 +37,13 @@
 .card-deck .card {
     margin-bottom: $card-deck-margin*2;
 }
-
+.frame-background-primary {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        color: $white;
+    }
+}
 
