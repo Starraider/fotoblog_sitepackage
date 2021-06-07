@@ -10,10 +10,10 @@
 
     <div class="card-body">
         <h2 class="card-title" itemprop="name">
-            <blog:link.post post="{post}"/>
+            <blogvh:link.post post="{post}" />
         </h2>
         <p class="list-meta small">
-            <f:render partial="Meta/PostHeader" arguments="{_all}" />
+            <f:render partial="Meta/ListHeader" arguments="{_all}" />
         </p>
         <f:if condition="{post.abstract}">
             <f:then>
@@ -22,10 +22,9 @@
             <f:else>
                 <p class="card-text" itemprop="description">{post.description}</p>
             </f:else>
-            <blog:link.post post="{post}">
-                mehr...
-            </blog:link.post>
         </f:if>
+        <f:render partial="Meta/ListFooter" arguments="{_all}" />
+        <blog:link.post post="{post}">mehr...</blog:link.post>
     </div>
 </div>
 

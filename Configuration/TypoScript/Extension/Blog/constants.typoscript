@@ -1,5 +1,56 @@
 plugin {
   tx_blog {
+    settings  {
+      comments.moderation = 1
+      lists {
+        featuredImage.width = 520c
+        featuredImage.height = 347
+        posts.maximumDisplayedItems = 0
+        pagination.maximumNumberOfLinks = 50
+      }
+      meta {
+        listheader {
+          modifier = simple
+          elements {
+            authors.enable = 0
+            categories.enable = 1
+            tags.enable = 0
+            published.enable = 1
+            comments.enable = 1
+          }
+        }
+        listfooter {
+          modifier = condensed
+          elements {
+            authors.enable = 0
+            categories.enable = 0
+            tags.enable = 1
+            published.enable = 0
+            comments.enable = 0
+          }
+        }
+        postheader {
+          modifier = simple
+          elements {
+            authors.enable = 0
+            categories.enable = 1
+            tags.enable = 0
+            published.enable = 1
+            comments.enable = 1
+          }
+        }
+        postfooter {
+          modifier = condensed
+          elements {
+            authors.enable = 0
+            categories.enable = 0
+            tags.enable = 1
+            published.enable = 0
+            comments.enable = 0
+          }
+        }
+      }
+    }
     view {
       templateRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Templates/
       partialRootPaths = EXT:fotoblog_sitepackage/Resources/Private/Partials/

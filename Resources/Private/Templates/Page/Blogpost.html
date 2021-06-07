@@ -1,6 +1,9 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:rx="http://typo3.org/ns/Reelworx/RxShariff/ViewHelper" data-namespace-typo3-fluid="true">
 <f:layout name="Default" />
+<f:section name="Border">
+    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '3'}" />
+</f:section>
 <f:section name="Main">
-
     <div class="container">
         <div class="blogcontainer">
             <main class="blogcontainer-main" role="main">
@@ -9,18 +12,23 @@
                 <f:render section="renderPlugin" arguments="{listType: 'blog_footer'}" />
                 <f:render section="renderPlugin" arguments="{listType: 'blog_comments'}" />
                 <f:render section="renderPlugin" arguments="{listType: 'blog_commentform'}" />
+                <div class="mb-5">
+                    <h4>Share</h4>
+                    <rx:shariff data="{url: '{f:uri.page(absolute: 1)}', theme: 'grey'}" services="facebook,twitter,linkedin,reddit,stumbleupon,whatsapp" enableBackend="false"/>
+                </div>
                 <f:render section="renderPlugin" arguments="{listType: 'blog_relatedposts'}" />
             </main>
             <aside class="blogcontainer-sidebar">
-
+                <f:render section="renderPlugin" arguments="{listType: 'blog_sidebar'}" />
             </aside>
         </div>
     </div>
 
 </f:section>
 <f:section name="renderPlugin">
-
     {blogvh:data.contentListOptions(listType: listType)}
     <f:cObject typoscriptObjectPath="tt_content.list" data="{contentObjectData}" table="tt_content"/>
-
+</f:section>
+<f:section name="Footer">
+    <f:render partial="Structure/FooterContent" arguments="{_all}" />
 </f:section>
