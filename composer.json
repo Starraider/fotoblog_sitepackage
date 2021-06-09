@@ -1,7 +1,7 @@
 {
 	"name": "skom/fotoblog-sitepackage",
 	"type": "typo3-cms-extension",
-	"description": "Sitepackage for a Foto- or Travel-Blog",
+	"description": "Sitepackage for a Photo- or Travel-Blog",
 	"homepage": "https://www.photographieren.info",
 	"license": [
 		"GPL-2.0-or-later"
