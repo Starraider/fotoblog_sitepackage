@@ -1,12 +1,13 @@
 plugin {
   tx_blog {
     settings  {
+      widgets.tags.minSize = 65
       comments.moderation = 1
       lists {
         featuredImage.width = 520c
         featuredImage.height = 347
         posts.maximumDisplayedItems = 0
-        pagination.maximumNumberOfLinks = 50
+        pagination.maximumNumberOfLinks = 12
       }
       meta {
         listheader {
@@ -20,7 +21,7 @@ plugin {
           }
         }
         listfooter {
-          modifier = condensed
+          modifier = modern
           elements {
             authors.enable = 0
             categories.enable = 0

@@ -18,8 +18,8 @@ plugin.tx_blog {
 #            20 = tt_content.list.20.blog_categorywidget
 #            30 = tt_content.list.20.blog_tagwidget
 #            40 = tt_content.list.20.blog_commentswidget
-            50 >
-            60 >
+#            50 >
+#            60 >
         }
         pageInfo.title = TEXT
         pageInfo.title {
@@ -30,7 +30,7 @@ plugin.tx_blog {
 }
 plugin.tx_blog.settings.lists.posts.maximumDisplayedItems = 0
 [page["uid"] == 2]
-    plugin.tx_blog.settings.paginateItemsPerPage = 9
+    plugin.tx_blog.settings.paginateItemsPerPage = 8
 [ELSE]
-    plugin.tx_blog.settings.paginateItemsPerPage = 18
+    plugin.tx_blog.settings.paginateItemsPerPage = 12
 [END]
