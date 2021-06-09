@@ -27,6 +27,24 @@ plugin.tx_blog {
             stdWrap.wrap = <h1>|</h1>
         }
     }
+    _LOCAL_LANG {
+        default {
+            meta.comments.has_comments (
+              %s
+              )
+            meta.comments.has_comment (
+              %s
+              )
+        }
+        de {
+            meta.comments.has_comments (
+              %s
+              )
+            meta.comments.has_comment (
+              %s
+              )
+        }
+    }
 }
 plugin.tx_blog.settings.lists.posts.maximumDisplayedItems = 0
 [page["uid"] == 2]
