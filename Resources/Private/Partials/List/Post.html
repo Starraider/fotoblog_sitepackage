@@ -12,9 +12,7 @@
         <h2 class="card-title" itemprop="name">
             <blogvh:link.post post="{post}" />
         </h2>
-        <p class="list-meta small">
-            <f:render partial="Meta/ListHeader" arguments="{_all}" />
-        </p>
+        <f:render partial="Meta/ListHeader" arguments="{_all}" />
         <f:if condition="{post.abstract}">
             <f:then>
                 <p class="card-text" itemprop="description">{post.abstract}</p>
