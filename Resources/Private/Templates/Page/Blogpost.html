@@ -25,10 +25,12 @@
     </div>
 
 </f:section>
+
+<f:section name="Footer">
+    <f:render partial="Structure/FooterContent" arguments="{_all}" />
+</f:section>
+
 <f:section name="renderPlugin">
     {blogvh:data.contentListOptions(listType: listType)}
     <f:cObject typoscriptObjectPath="tt_content.list" data="{contentObjectData}" table="tt_content"/>
-</f:section>
-<f:section name="Footer">
-    <f:render partial="Structure/FooterContent" arguments="{_all}" />
 </f:section>
