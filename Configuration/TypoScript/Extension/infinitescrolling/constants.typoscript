@@ -1,0 +1,11 @@
+plugin.tx_infinitescrolling {
+  includeJQueryLibrary = 0
+  container = div.card-deck
+  item = div.card.post
+  pagination = ul.pagination
+  next = li.page-item.next a
+  previous = li.page-item.previous a
+  negativeMargin = 300
+  loader.html = <div class="container ias-spinner" style="text-align: center;"><img src="|"/></div>
+  offset = 10
+}

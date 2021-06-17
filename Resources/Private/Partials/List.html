@@ -28,22 +28,10 @@
 </f:section>
 
 <f:section name="ListPosts">
-    <f:for each="{posts}" as="post" iteration="itemIterator">
-        <f:cycle values="{0:'left', 1:'right', 3:'center'}" as="order">
-            <f:switch expression="{order}">
-                <f:case value="left">
-                    <div class="card-deck">
-                    <f:render partial="List/Post" arguments="{_all}" />
-                </f:case>
-                <f:case value="right">
-                    <f:render partial="List/Post" arguments="{_all}" />
-                </f:case>
-                <f:case value="center">
-                    <f:render partial="List/Post" arguments="{_all}" />
-                    </div>
-                </f:case>
-            </f:switch>
-        </f:cycle>
-    </f:for>
-
+    <div class="card-deck">
+        <f:for each="{posts}" as="post">
+            <blogvh:cache post="{post}" />
+            <f:render partial="List/Post" arguments="{_all}" />
+        </f:for>
+    </div>
 </f:section>

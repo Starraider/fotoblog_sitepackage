@@ -12,7 +12,7 @@
                     <f:if condition="{settings.widgets.archive.groupByMonth} == 1">
                         <ul>
                             <f:for each="{rows}" as="row">
-                                <f:render section="monthLink" arguments="{settings: settings, year: year, row: row}" />
+                                <f:render section="MonthLink" arguments="{settings: settings, year: year, row: row}" />
                             </f:for>
                         </ul>
                     </f:if>
@@ -21,7 +21,7 @@
             <f:else>
                 <f:if condition="{settings.widgets.archive.groupByMonth} == 1">
                     <f:for each="{rows}" as="row">
-                        <f:render section="monthLink" arguments="{settings: settings, year: year, row: row}" />
+                        <f:render section="MonthLink" arguments="{settings: settings, year: year, row: row}" />
                     </f:for>
                 </f:if>
             </f:else>

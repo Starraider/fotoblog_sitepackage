@@ -1,36 +1,54 @@
 plugin.tx_blog {
     view {
-        templateRootPaths.0 = {$plugin.tx_blog.view.templateRootPaths}
-        partialRootPaths.0 = {$plugin.tx_blog.view.partialRootPaths}
-        layoutRootPaths.0 = {$plugin.tx_blog.view.layoutRootPaths}
-        templateRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Templates/
-        partialRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Partials/
-        layoutRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Layouts/
-        widget.TYPO3\CMS\Fluid\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates
+#        templateRootPaths.0 = {$plugin.tx_blog.view.templateRootPaths}
+#        partialRootPaths.0 = {$plugin.tx_blog.view.partialRootPaths}
+#        layoutRootPaths.0 = {$plugin.tx_blog.view.layoutRootPaths}
+#        templateRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Templates/
+#        partialRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Partials/
+#        layoutRootPaths.1 = EXT:fotoblog_sitepackage/Resources/Private/Layouts/
+#        widget.TYPO3\CMS\Fluid\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates
 
     }
     settings {
         comments {
             moderation = 1
         }
-        sidebarWidgets {
+#        sidebarWidgets {
 #            10 = tt_content.list.20.blog_recentpostswidget
 #            20 = tt_content.list.20.blog_categorywidget
 #            30 = tt_content.list.20.blog_tagwidget
 #            40 = tt_content.list.20.blog_commentswidget
-            50 >
-            60 >
+#            50 >
+#            60 >
+#        }
+#        pageInfo.title = TEXT
+#        pageInfo.title {
+#            data = page:page:title // page:subtitle // nav_title
+#            stdWrap.wrap = <h1>|</h1>
+#        }
+    }
+    _LOCAL_LANG {
+        default {
+            meta.comments.has_comments (
+              %s
+              )
+            meta.comments.has_comment (
+              %s
+              )
         }
-        pageInfo.title = TEXT
-        pageInfo.title {
-            data = page:page:title // page:subtitle // nav_title
-            stdWrap.wrap = <h1>|</h1>
+        de {
+            meta.comments.has_comments (
+              %s
+              )
+            meta.comments.has_comment (
+              %s
+              )
         }
     }
 }
 plugin.tx_blog.settings.lists.posts.maximumDisplayedItems = 0
 [page["uid"] == 2]
-    plugin.tx_blog.settings.paginateItemsPerPage = 9
+    plugin.tx_blog.settings.paginateItemsPerPage = 8
 [ELSE]
-    plugin.tx_blog.settings.paginateItemsPerPage = 18
+    plugin.tx_blog.settings.paginateItemsPerPage = 12
 [END]

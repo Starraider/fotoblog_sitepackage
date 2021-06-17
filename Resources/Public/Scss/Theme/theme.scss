@@ -6,8 +6,8 @@
 //
 // Import needed Bootstrap Package Files
 //
-@import "../../../../../bootstrap_package/Resources/Public/Scss/Theme/theme";
-@import "../../../../../skom_sitepackage/Resources/Public/Scss/Theme/theme";
+//@import "../../../../../../public/typo3conf/ext/bootstrap_package/Resources/Public/Scss/Theme/theme";
+//@import "../../../../../../public/typo3conf/ext/skom_sitepackage/Resources/Public/Scss/Theme/theme";
 
 //
 // Components
@@ -30,12 +30,44 @@
 .tx-blog-widget {
     margin-bottom: 2rem;
 }
-.list-meta {
-    margin-bottom: 0.5rem;
+.blogbadge {
+    border-radius: 10px;
 }
 
+.postmetagroup--type-listheader {
+    font-size: $font-size-sm;
+    margin-bottom: 0.2rem;
+}
+.postmetagroup__item--tags {
+    font-size: $font-size-sm;
+    margin-bottom: 0.6rem;
+}
+
+.card-deck {
+    margin: 0 -15px;
+    justify-content: space-between;
+    figure {
+        margin-bottom: 0;
+    }
+}
 .card-deck .card {
-    margin-bottom: $card-deck-margin*2;
+    margin: 0 0 1rem;
 }
-
-
+@include media-breakpoint-up(sm) {
+    .card-deck .card {
+        -ms-flex: 0 0 48.7%;
+        flex: 0 0 48.7%;
+    }
+}
+@include media-breakpoint-up(md) {
+    .card-deck .card {
+        -ms-flex: 0 0 32%;
+        flex: 0 0 32%;
+    }
+}
+@media (min-width: 1500px) {
+    .card-deck .card {
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+    }
+}

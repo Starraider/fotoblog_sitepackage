@@ -6,14 +6,14 @@
             <i class="fa fa-comment"></i>&nbsp;
             <meta itemprop="commentCount" content="{commentCount}"/>
             <span class="comments-link">
-                <blog:link.post post="{post}" section="comments">
+                <blog:link.post post="{post}" section="Comments">
                     {commentCount}
                 </blog:link.post>
             </span>
         </f:alias>
     </f:then>
     <f:else>
-        <blog:link.post post="{post}" section="disqus_thread" data="{disqus-identifier: '{settings.comments.disqus.shortname}:post:{post.uid}'}">
+        <blog:link.post post="{post}" section="Disqus_thread" data="{disqus-identifier: '{settings.comments.disqus.shortname}:post:{post.uid}'}">
             <f:translate key="message.comments" arguments="{0: 0}"/>
         </blog:link.post>
     </f:else>

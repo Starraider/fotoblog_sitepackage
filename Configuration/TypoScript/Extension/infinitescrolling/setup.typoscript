@@ -1,0 +1,11 @@
+page.includeJSFooter {
+  jQueryForInfiniteScrolling =
+  infiniteScrolling_callback.defer = 1
+  infiniteScrolling_ias.defer = 1
+  infiniteScrolling_spinner.defer = 1
+  infiniteScrolling_paging.defer = 1
+  infiniteScrolling_trigger.defer = 1
+  infiniteScrolling_history.defer = 1
+}
+page.jsFooterInline.1519224720.wrap = $( document ).ready(function() {|});
+page.includeJSLibs.jquery.defer = 0

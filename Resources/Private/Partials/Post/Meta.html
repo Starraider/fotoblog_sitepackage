@@ -14,7 +14,7 @@
                 <i class="fa fa-comments"></i>&nbsp;
                 <meta itemprop="commentCount" content="{commentCount}"/>
                 <span class="comments-link">
-                    <blog:link.post post="{post}" section="comments">
+                    <blog:link.post post="{post}" section="Comments">
                         <f:if condition="{commentCount} == 1">
                             <f:then><f:translate key="message.comment" arguments="{0: commentCount}"/></f:then>
                             <f:else><f:translate key="message.comments" arguments="{0: commentCount}"/></f:else>
@@ -24,7 +24,7 @@
             </f:alias>
         </f:then>
         <f:else>
-            <blog:link.post post="{post}" section="disqus_thread" data="{disqus-identifier: '{settings.comments.disqus.shortname}:post:{post.uid}'}">
+            <blog:link.post post="{post}" section="Disqus_thread" data="{disqus-identifier: '{settings.comments.disqus.shortname}:post:{post.uid}'}">
                 <f:translate key="message.comments" arguments="{0: 0}"/>
             </blog:link.post>
         </f:else>

@@ -3,7 +3,16 @@
 ######################
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:skom_sitepackage/Configuration/TypoScript/constants.typoscript">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:blog/Configuration/TypoScript/Integration/constants.typoscript">
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/ContentElement/constants.typoscript">
+
+##################
+### EXTENSIONS ###
+##################
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/Extension/RxShariff/constants.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('rx_shariff')">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/Extension/Blog/constants.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('blog')">
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fotoblog_sitepackage/Configuration/TypoScript/Extension/infinitescrolling/constants.typoscript" condition="userFunc = TYPO3\\CMS\\Core\\Utility\\ExtensionManagementUtility::isLoaded('blog')">
+
 
 ############
 ### PAGE ###
@@ -21,36 +30,16 @@ page {
         file = EXT:fotoblog_sitepackage/Resources/Public/Icons/favicon.ico
     }
     fluidtemplate {
-        layoutRootPath = EXT:fotoblog_sitepackage/Resources/Private/Layouts/Page/
-        partialRootPath = EXT:fotoblog_sitepackage/Resources/Private/Partials/Page/
-        templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates/Page/
-    }
-}
-
-##################
-### EXTENSIONS ###
-##################
-plugin.bootstrap_package {
-    view {
-        layoutRootPath = EXT:fotoblog_sitepackage/Resources/Private/Layouts/
-        partialRootPath = EXT:fotoblog_sitepackage/Resources/Private/Partials/
-        templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates/
+#        layoutRootPath = EXT:fotoblog_sitepackage/Resources/Private/Layouts/Page/
+#        partialRootPath = EXT:fotoblog_sitepackage/Resources/Private/Partials/Page/
+#        templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates/Page/
     }
 }
 
 
 
 
-########################
-### CONTENT ELEMENTS ###
-########################
-plugin.bootstrap_package_contentelements {
-    view {
-        layoutRootPath = EXT:fotoblog_sitepackage/Resources/Private/Layouts/ContentElements/
-        partialRootPath = EXT:fotoblog_sitepackage/Resources/Private/Partials/ContentElements/
-        templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates/ContentElements/
-    }
-}
+
 
 
 ################################
