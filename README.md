@@ -26,8 +26,8 @@ Here you can find examples of websites, who use this extensions:
 ## Dependency
 
 - [bk2k/bootstrap-package](https://extensions.typo3.org/extension/bootstrap_package): ^11
-- [t3g/blog](https://extensions.typo3.org/extension/blog): ^9.1
-- [skom/skom-sitepackage](https://github.com/Starraider/skom_sitepackage): ^9.2.14
+- [t3g/blog](https://extensions.typo3.org/extension/blog): ^10.0
+- [skom/skom-sitepackage](https://github.com/Starraider/skom_sitepackage): ^9.3.0
 
 ---
 
