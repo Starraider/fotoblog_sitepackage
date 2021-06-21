@@ -30,9 +30,9 @@ page {
         file = EXT:fotoblog_sitepackage/Resources/Public/Icons/favicon.ico
     }
     fluidtemplate {
-#        layoutRootPath = EXT:fotoblog_sitepackage/Resources/Private/Layouts/Page/
-#        partialRootPath = EXT:fotoblog_sitepackage/Resources/Private/Partials/Page/
-#        templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates/Page/
+        layoutRootPath = EXT:fotoblog_sitepackage/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:fotoblog_sitepackage/Resources/Private/Partials/Page/
+        templateRootPath = EXT:fotoblog_sitepackage/Resources/Private/Templates/Page/
     }
 }
 
