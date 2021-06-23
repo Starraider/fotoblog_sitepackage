@@ -59,24 +59,7 @@ page {
     tx_rxshariff_shariff >
   }
 }
-[blog.isPost() || blog.isPage()]
-page {
-    10 {
-        templateName >
-        templateName = BlogList
-        layoutRootPaths {
-            -1579272243 = EXT:blog/Resources/Private/Layouts/Page/
-            0 = EXT:bootstrap_package/Resources/Private/Layouts/Page/
-            10 = EXT:skom_sitepackage/Resources/Private/Layouts/Page/
-            15 = EXT:fotoblog_sitepackage/Resources/Private/Layouts/Page/
-        }
-        templateRootPaths {
-            -1579272243 = EXT:blog/Resources/Private/Templates/Page/
-            15 = EXT:fotoblog_sitepackage/Resources/Private/Templates/Page/
-        }
-    }
-}
-[end]
+
 
 lib.contentElement {
     dataProcessing {
