@@ -3,7 +3,6 @@
 lib.contentElement.settings {
   header.defaultHeaderType = 2
   header.class = d-none
-  subheader.class = element-subheader h2
 }
 [end]
 
