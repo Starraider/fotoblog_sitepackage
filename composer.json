@@ -9,7 +9,7 @@
 	"keywords": [
 		"TYPO3 CMS"
 	],
-	"version": "9.5.0",
+	"version": "10.4.0",
 	"extra": {
 		"typo3/cms": {
 			"extension-key": "fotoblog_sitepackage"
