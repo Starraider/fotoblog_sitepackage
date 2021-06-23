@@ -53,6 +53,9 @@
 .card-deck .card {
     margin: 0 0 1rem;
 }
+h1.postheader__title {
+    font-size: 1.85rem;
+}
 @include media-breakpoint-up(sm) {
     .card-deck .card {
         -ms-flex: 0 0 48.7%;
